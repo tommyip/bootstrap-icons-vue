@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-icons-vue",
+  "version": "0.1.0",
+  "description": "A Vue component library for Bootstrap icons.",
+  "main": "index.js",
+  "author": "Thomas Ip <thomas@ipthomas.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./src/codegen.js && rollup -c"
+  },
+  "devDependencies": {
+    "bootstrap-icons": "^1.0.0",
+    "rollup": "^2.26.9"
+  }
+}
