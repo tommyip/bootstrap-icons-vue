@@ -10,7 +10,7 @@ export default [
     input: 'src/index.js',
     output: {
       format: 'cjs',
-      file: 'dist/library.ssr.js',
+      file: 'dist/library.cjs.js',
     },
   },
 ];
