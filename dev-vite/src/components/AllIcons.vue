@@ -3,21 +3,23 @@
   <div class="icons-grid">
     <component
       v-for="icon in icons"
-      :is="icon.name"
-      :key="icon.name"
+      :is="icon"
+      :key="icon"
     />
   </div>
 </template>
 
 <script>
-import * as icons from 'bootstrap-icons-vue';
+import * as exports from 'bootstrap-icons-vue';
 
 export default {
   name: 'AllIcons',
   components: {
-    ...icons,
+    ...exports,
   },
   setup() {
+    const icons = exports.iconNames;
+
     return {
       icons,
     };

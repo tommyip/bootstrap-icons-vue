@@ -1,5 +1,5 @@
 <template>
-  <h2>Globally imported individual icons</h2>
+  <h2>Global icons import</h2>
 
   <div class="icons-grid">
     <BIconBookmarkCheck />
@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'GlobalIndividualIcons',
+  name: 'GlobalImport',
 };
 </script>

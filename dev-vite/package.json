@@ -6,7 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "bootstrap-icons-vue": "file:../",
+    "bootstrap-icons-vue": "file:..",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {

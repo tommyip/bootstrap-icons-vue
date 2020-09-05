@@ -1,9 +1,9 @@
 <template>
-  <h2>Individual icons</h2>
+  <h2>Importing icons for current component</h2>
   <div class="icons-grid">
-    <BIconAlarm />
-    <BIconFileSpreadsheet />
-    <BIconArrow90degDown />
+    <BIconBookmarkCheck />
+    <BIconChatDotsFill />
+    <b-icon-circle-half />
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 import { BIconAlarm, BIconFileSpreadsheet, BIconArrow90degDown } from 'bootstrap-icons-vue';
 
 export default {
-  name: 'IndividualIcons',
+  name: 'PerComponent',
   components: {
     BIconAlarm,
     BIconFileSpreadsheet,

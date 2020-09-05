@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const assert = require('assert').strict;
 
-const outputPath = path.join(__dirname, 'index.js');
+const outputPath = path.join(__dirname, 'icons.js');
 const iconsPath = path.join(__dirname, '..', 'node_modules', 'bootstrap-icons', 'icons');
 
 const helperImportTemplate = `\
