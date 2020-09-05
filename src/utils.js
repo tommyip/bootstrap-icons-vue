@@ -1,3 +1,5 @@
+import { h } from 'vue';
+
 const attrs = {
   width: '1em',
   height: '1em',
@@ -18,14 +20,14 @@ const attrs = {
 export function genIcon(name, svgContent) {
   return {
     name,
-    render: h => h(
-      'svg',
-      {
-        attrs,
-        domProps: {
+    render() {
+      return h(
+        'svg',
+        {
+          ...attrs,
           innerHTML: svgContent,
         },
-      },
-    ),
+      );
+    },
   };
 }
