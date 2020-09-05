@@ -1,16 +1,19 @@
 <template>
   <IndividualIcons />
+  <GlobalIndividualIcons />
   <AllIcons />
 </template>
 
 <script>
 import IndividualIcons from './components/IndividualIcons.vue';
+import GlobalIndividualIcons from './components/GlobalIndividualIcons.vue';
 import AllIcons from './components/AllIcons.vue';
 
 export default {
   name: 'App',
   components: {
     IndividualIcons,
+    GlobalIndividualIcons,
     AllIcons,
   },
 };

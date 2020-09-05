@@ -13,5 +13,8 @@
     "bootstrap-icons": "^1.0.0",
     "rollup": "^2.26.9",
     "vue": "^3.0.0-rc.10"
-  }
+  },
+  "files": [
+    "/dist"
+  ]
 }
