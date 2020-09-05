@@ -80,6 +80,6 @@ Note that this registers all icon components to the app instance, unused icons w
 
 ### Browser
 
-Comming soon...
+Coming soon...
 
 [Bootstrap Icons]: https://icons.getbootstrap.com/
