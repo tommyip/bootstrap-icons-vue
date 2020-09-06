@@ -1,4 +1,4 @@
-import { h } from 'vue';
+import { h, ComponentOptions } from 'vue';
 
 const attrs = {
   width: '1em',
@@ -9,15 +9,7 @@ const attrs = {
   focusable: 'false',
 };
 
-/**
- * Generate a Vue icon component
- *
- * @param {string} name - Name of the Vue icon component
- * @param {string} svgContent - Inner content of the SVG
- *
- * @returns {object} a Vue component options object
- */
-export function genIcon(name, svgContent) {
+export function genIcon(name: string, svgContent: string): ComponentOptions {
   return {
     name,
     render() {

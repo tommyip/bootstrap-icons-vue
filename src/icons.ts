@@ -1,6 +1,6 @@
 // This file is generated. Do not modify directly.
 
-import { genIcon } from './utils.js';
+import { genIcon } from './utils';
 
 export const BIconAlarmFill = genIcon(
   'BIconAlarmFill',

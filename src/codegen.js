@@ -2,13 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const assert = require('assert').strict;
 
-const outputPath = path.join(__dirname, 'icons.js');
+const outputPath = path.join(__dirname, 'icons.ts');
 const iconsPath = path.join(__dirname, '..', 'node_modules', 'bootstrap-icons', 'icons');
 
 const helperImportTemplate = `\
 // This file is generated. Do not modify directly.
 
-import { genIcon } from './utils.js';
+import { genIcon } from './utils';
 
 `;
 

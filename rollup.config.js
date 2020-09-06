@@ -1,9 +1,10 @@
+import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 
 export default [
   {
     external: ['vue'],
-    input: 'src/index.js',
+    input: 'src/index.ts',
     output: [
       {
         format: 'esm',
@@ -14,10 +15,11 @@ export default [
         file: 'dist/lib.common.js',
       },
     ],
+    plugins: [typescript()],
   },
   {
     external: ['vue'],
-    input: 'src/browser.js',
+    input: 'src/browser.ts',
     output: [
       {
         format: 'iife',
@@ -37,5 +39,6 @@ export default [
         plugins: [terser()],
       },
     ],
+    plugins: [typescript()],
   },
 ];
