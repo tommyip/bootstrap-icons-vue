@@ -21,6 +21,8 @@ All icons are exported following the `PascalCase` naming convention, prefixed wi
 
 Each icon is `1em` in width and height. They can be styled by inheriting from their parent element, or receiving class or style attribute directly.
 
+You can find the full list of available icons at https://icons.getbootstrap.com/.
+
 ### With module bundlers
 
 First install the package using your package manager of choice:
