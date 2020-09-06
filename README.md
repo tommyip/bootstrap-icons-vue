@@ -1,6 +1,18 @@
 <img src="./assets/banner.jpg">
 <h1 align="center">Bootstrap Icons Vue</h1>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/bootstrap-icons-vue">
+    <img src="https://img.shields.io/npm/v/bootstrap-icons-vue?color=blue" alt="NPM">
+  </a>
+  <a href="https://icons.getbootstrap.com/">
+    <img src="https://img.shields.io/badge/Bootstrap%20Icons-1.0.0-blueviolet" alt="Bootstrap Icons">
+  </a>
+  <a href="https://github.com/vuejs/vue-next">
+    <img src="https://img.shields.io/badge/Vue.js-3.x-success" alt="Vue JS">
+  </a>
+</p>
+
 > Bootstrap Icons are designed to work with Bootstrap components, from form controls to navigation. But, they'll work in just about any project, too. That's because Bootstrap Icons are SVGs, so they scale quickly and easily and can be styled with CSS. -- [Bootstrap Icons]
 
 This package provides bootstrap icons as Vue components.
