@@ -8,6 +8,7 @@
   "module": "dist/lib.esm.js",
   "web": "dist/bundle.min.js",
   "types": "dist/index.d.ts",
+  "unpkg": "dist/bundle.min.js",
   "keywords": [
     "Vue",
     "VueJS",
