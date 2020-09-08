@@ -55,7 +55,7 @@ Making them globally available for an app:
 
 ```js
 import { createApp } from 'vue';
-import { BIconBatteryFull, BIconArrow90degDown, BIconBookmark } from 'bootstrap-icons-vue`;
+import { BIconBatteryFull, BIconArrow90degDown, BIconBookmark } from 'bootstrap-icons-vue';
 
 const app = createApp(/** App **/);
 app.component('BIconBatteryFull', BIconBatteryFull);
@@ -67,7 +67,7 @@ app.mount('#app');
 Or for just one component:
 
 ```js
-import { BIconBatteryFull, BIconArrow90degDown, BIconBookmark } from 'bootstrap-icons-vue`;
+import { BIconBatteryFull, BIconArrow90degDown, BIconBookmark } from 'bootstrap-icons-vue';
 
 export default {
   components: {
