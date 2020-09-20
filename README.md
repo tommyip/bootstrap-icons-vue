@@ -97,8 +97,8 @@ Note that this registers all icon components to the app instance, unused icons w
 Include the scripts from CDN as follows:
 
 ```html
-<script src="https://unpkg.com/vue@next"></script>
-<script src="https://unpkg.com/bootstrap-icons-vue@latest"></script>
+<script src="https://unpkg.com/vue@3.0.0"></script>
+<script src="https://unpkg.com/bootstrap-icons-vue@0.2.0"></script>
 ```
 
 Vue 3 does not have a global application instance, so it is not possible to install the icons components automatically. Instead the browser build exports  a plugin `BootstrapIconsVue` to be installed:
