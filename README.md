@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/npm/v/bootstrap-icons-vue?color=blue" alt="NPM">
   </a>
   <a href="https://icons.getbootstrap.com/">
-    <img src="https://img.shields.io/badge/Bootstrap%20Icons-1.1.0-blueviolet" alt="Bootstrap Icons">
+    <img src="https://img.shields.io/badge/Bootstrap%20Icons-1.2.2-blueviolet" alt="Bootstrap Icons">
   </a>
   <a href="https://github.com/vuejs/vue-next">
     <img src="https://img.shields.io/badge/Vue.js-3.x-success" alt="Vue JS">
@@ -17,7 +17,7 @@
 
 This package provides bootstrap icons as Vue components.
 
-Built from Bootstrap Icons v1.1.0. **Requires Vue 3.**
+Built from Bootstrap Icons v1.2.2. **Requires Vue 3.**
 
 ## Usage
 
@@ -97,8 +97,8 @@ Note that this registers all icon components to the app instance, unused icons w
 Include the scripts from CDN as follows:
 
 ```html
-<script src="https://unpkg.com/vue@3.0.0"></script>
-<script src="https://unpkg.com/bootstrap-icons-vue@0.3.0"></script>
+<script src="https://unpkg.com/vue@3.0.4"></script>
+<script src="https://unpkg.com/bootstrap-icons-vue@0.4.0"></script>
 ```
 
 Vue 3 does not have a global application instance, so it is not possible to install the icons components automatically. Instead the browser build exports  a plugin `BootstrapIconsVue` to be installed:
@@ -108,5 +108,9 @@ const app = Vue.createApp(/** App **/);
 app.use(BootstrapIconsVue);
 app.mount('#app');
 ```
+
+### Development
+
+Install dependencies with `yarn install` then generate icon files with `yarn build`. Test them in cdn mode with `yarn dev:cdn` or vite mode with `yarn dev:vite`.
 
 [Bootstrap Icons]: https://icons.getbootstrap.com/
