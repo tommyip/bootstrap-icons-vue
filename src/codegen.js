@@ -13,7 +13,7 @@ import { genIcon } from './utils';
 `;
 
 const iconComponentTemplate = `\
-export const {{componentName}} = genIcon(
+export const {{componentName}} = /*#__PURE__*/ genIcon(
   '{{componentName}}',
   '{{svgContent}}'
 );`;

@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-icons-vue",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Bootstrap icons as Vue components.",
   "author": "Thomas Ip <thomas@ipthomas.com>",
   "license": "MIT",
@@ -41,5 +41,6 @@
   },
   "files": [
     "/dist"
-  ]
+  ],
+  "sideEffects": false
 }

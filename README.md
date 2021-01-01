@@ -98,7 +98,7 @@ Include the scripts from CDN as follows:
 
 ```html
 <script src="https://unpkg.com/vue@3.0.4"></script>
-<script src="https://unpkg.com/bootstrap-icons-vue@0.4.0"></script>
+<script src="https://unpkg.com/bootstrap-icons-vue@0.4.1"></script>
 ```
 
 Vue 3 does not have a global application instance, so it is not possible to install the icons components automatically. Instead the browser build exports  a plugin `BootstrapIconsVue` to be installed:
@@ -111,6 +111,6 @@ app.mount('#app');
 
 ### Development
 
-Install dependencies with `yarn install` then generate icon files with `yarn build`. Test them in cdn mode with `yarn dev:cdn` or vite mode with `yarn dev:vite`.
+Install dependencies with `yarn install` then generate icon files with `yarn build`. To test the browser build, run `yarn dev:cdn`. With the vite app, first link the library by running `yarn link` in this directory, then `yarn link bootstrap-icons-vue` in `./dev-vite`, finally run `yarn dev:vite` back in this directory.
 
 [Bootstrap Icons]: https://icons.getbootstrap.com/

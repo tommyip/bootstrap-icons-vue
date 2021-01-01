@@ -9,4 +9,4 @@ export const BootstrapIconsPlugin: Plugin = {
   },
 };
 
-export const iconNames = Object.keys(icons);
+export const iconNames = /*#__PURE__*/ Object.keys(icons);
