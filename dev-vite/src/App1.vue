@@ -7,9 +7,3 @@
     <b-icon-circle-half />
   </div>
 </template>
-
-<script>
-export default {
-  name: 'App1',
-};
-</script>
