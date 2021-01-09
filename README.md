@@ -109,8 +109,10 @@ app.use(BootstrapIconsVue);
 app.mount('#app');
 ```
 
-### Development
+## Development
 
 Install dependencies with `yarn install` then generate icon files with `yarn build`. To test the browser build, run `yarn dev:cdn`. With the vite app, first link the library by running `yarn link` in this directory, then `yarn link bootstrap-icons-vue` in `./dev-vite`, finally run `yarn dev:vite` back in this directory.
+
+The `upgrade.sh` script upgrades everything and update the docs with new version specifiers.
 
 [Bootstrap Icons]: https://icons.getbootstrap.com/
