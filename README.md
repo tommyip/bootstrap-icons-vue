@@ -15,41 +15,30 @@
 
 > Bootstrap Icons are designed to work with Bootstrap components, from form controls to navigation. But, they'll work in just about any project, too. That's because Bootstrap Icons are SVGs, so they scale quickly and easily and can be styled with CSS. -- [Bootstrap Icons]
 
-This package provides bootstrap icons as Vue components.
+This library provides Bootstrap icons as Vue 3.x components.
 
-Built from Bootstrap Icons v1.5.0. **Requires Vue 3.**
+Built from Bootstrap Icons v1.5.0.
 
-## Usage
-
-All icons are exported following the `PascalCase` naming convention, prefixed with `BIcon`. For example, the icon `battery-full` is exported as `BIconBatteryFull`, the icon `arrow-90deg-down` is exported as `BIconArrow90degDown`, etc. Vue allows you to refer to them in templates using either `PascalCase` or `kebab-case`.
-
-```vue
-<template>
-  <BIconArrow90degDown />
-  <!-- Or -->
-  <b-icon-arrow-90deg-down />
-</template>
-```
-
-Each icon is `1em` in width and height. They can be styled by inheriting from their parent element, or receiving class or style attribute directly.
-
-You can find the full list of available icons at https://icons.getbootstrap.com/.
-
-### With module bundlers
-
-First install the package using your package manager of choice:
+## Installation
 
 ```sh
+# Using yarn
 yarn add bootstrap-icons-vue
 
-# or
-
+# Or npm
 npm install bootstrap-icons-vue
 ```
 
-Then import the icons using one of the methods below:
+Alternatively, you can use them straight from a CDN without installation.
 
-**1. Importing specific icons**
+```html
+<script src="https://unpkg.com/vue@3.0.11"></script>
+<script src="https://unpkg.com/bootstrap-icons-vue@0.7.0"></script>
+```
+
+## Usage
+
+**1. Importing individual icons**
 
 Making them globally available for an app:
 
@@ -64,7 +53,7 @@ app.component('BIconBookmark', BIconBookmark);
 app.mount('#app');
 ```
 
-Or for just one component:
+Or just for one component:
 
 ```js
 import { BIconBatteryFull, BIconArrow90degDown, BIconBookmark } from 'bootstrap-icons-vue';
@@ -90,24 +79,39 @@ app.use(BootstrapIconsPlugin);
 app.mount('#app');
 ```
 
-Note that this registers all icon components to the app instance, unused icons will not be tree-shakable.
+Note that this will register all icon components to the app instance, unused icons will not be tree-shakable.
 
-### Browser
+**3. Import all icons (for CDN build)**
 
-Include the scripts from CDN as follows:
-
-```html
-<script src="https://unpkg.com/vue@3.0.6"></script>
-<script src="https://unpkg.com/bootstrap-icons-vue@0.7.0"></script>
-```
-
-Vue 3 does not have a global application instance, so it is not possible to install the icons components automatically. Instead the browser build exports  a plugin `BootstrapIconsVue` to be installed:
+Vue 3 does not have a global application instance, so it is not possible to automatically expose the icons components. Instead you should install the provided plugin to your app instance.
 
 ```js
 const app = Vue.createApp(/** App **/);
 app.use(BootstrapIconsVue);
 app.mount('#app');
 ```
+
+### Naming convention
+
+All icons are exported following the `PascalCase` naming convention, prefixed with `BIcon`. For example, the icon `battery-full` is exported as `BIconBatteryFull`, the icon `arrow-90deg-down` is exported as `BIconArrow90degDown`, etc. Vue allows you to refer to them in templates using either `PascalCase` or `kebab-case`.
+
+```html
+<template>
+  <BIconArrow90degDown />
+  <!-- Or -->
+  <b-icon-arrow-90deg-down />
+</template>
+```
+
+Each icon is `1em` in width and height. They can be styled by inheriting from their parent element, or receiving class or style attribute directly.
+
+You can find the full list of available icons at https://icons.getbootstrap.com/.
+
+## Relation to [BootstrapVue]
+
+BootstrapVue implements Bootstrap components (including Bootstrap Icons) and grid system as Vue 2 components. bootstrap-icons-vue is **NOT** intended to be used alongside BootstrapVue, as the latter is a superset of this project. Besides, they target different major Vue version.
+
+This library is for those who wants to use Bootstrap Icons but do not wish to pull in a massive dependency (BootstrapVue).
 
 ## Development
 
@@ -116,3 +120,4 @@ Install dependencies with `yarn install` then generate icon files with `yarn bui
 The `upgrade.sh` script upgrades everything and update the docs with new version specifiers.
 
 [Bootstrap Icons]: https://icons.getbootstrap.com/
+[BootstrapVue]: https://github.com/bootstrap-vue/bootstrap-vue
