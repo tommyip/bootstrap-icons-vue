@@ -6,18 +6,18 @@
     <img src="https://img.shields.io/npm/v/bootstrap-icons-vue?color=blue" alt="NPM">
   </a>
   <a href="https://icons.getbootstrap.com/">
-    <img src="https://img.shields.io/badge/Bootstrap%20Icons-1.5.0-blueviolet" alt="Bootstrap Icons">
+    <img src="https://img.shields.io/badge/Bootstrap%20Icons-1.7.2-blueviolet" alt="Bootstrap Icons">
   </a>
   <a href="https://github.com/vuejs/vue-next">
     <img src="https://img.shields.io/badge/Vue.js-3.x-success" alt="Vue JS">
   </a>
 </p>
 
-> Bootstrap Icons are designed to work with Bootstrap components, from form controls to navigation. But, they'll work in just about any project, too. That's because Bootstrap Icons are SVGs, so they scale quickly and easily and can be styled with CSS. -- [Bootstrap Icons]
+> Free, high quality, open source icon library with over 1,500 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project. -- [Bootstrap Icons]
 
 This library provides Bootstrap icons as Vue 3.x components.
 
-Built from Bootstrap Icons v1.5.0.
+Built from Bootstrap Icons v1.7.2.
 
 ## Installation
 
@@ -33,7 +33,7 @@ Alternatively, you can use them straight from a CDN without installation.
 
 ```html
 <script src="https://unpkg.com/vue@3.2.23"></script>
-<script src="https://unpkg.com/bootstrap-icons-vue@0.7.0"></script>
+<script src="https://unpkg.com/bootstrap-icons-vue@0.8.0"></script>
 ```
 
 ## Usage
