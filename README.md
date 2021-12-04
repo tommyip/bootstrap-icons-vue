@@ -32,7 +32,7 @@ npm install bootstrap-icons-vue
 Alternatively, you can use them straight from a CDN without installation.
 
 ```html
-<script src="https://unpkg.com/vue@3.0.11"></script>
+<script src="https://unpkg.com/vue@3.2.23"></script>
 <script src="https://unpkg.com/bootstrap-icons-vue@0.7.0"></script>
 ```
 
