@@ -15,11 +15,11 @@ BICON_CURRENT="$(version_of 'bootstrap-icons')"
 
 echo "Upgrading from v$LIB_CURRENT to v$LIB_NEXT..."
 
-yarn upgrade || { echo '`yarn upgrade` failed'; exit 1; }
+yarn upgrade --latest || { echo '`yarn upgrade` failed'; exit 1; }
 yarn build || { echo '`yarn build` failed'; exit 1;}
 
 pushd dev-vite
-yarn upgrade || { echo '`yarn upgrade` failed'; exit 1; }
+yarn upgrade --latest || { echo '`yarn upgrade` failed'; exit 1; }
 popd
 
 BICON_NEXT="$(version_of 'bootstrap-icons')"
