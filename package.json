@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-icons-vue",
-  "version": "0.8.0",
+  "version": "1.8.1",
   "description": "Bootstrap icons as Vue components.",
   "author": "Thomas Ip <thomas@ipthomas.com>",
   "license": "MIT",
@@ -31,13 +31,13 @@
     "dev:cdn": "http-server -o dev-cdn"
   },
   "devDependencies": {
-    "bootstrap-icons": "1.7.2",
-    "http-server": "^14.0.0",
-    "rollup": "^2.60.2",
+    "bootstrap-icons": "1.8.1",
+    "http-server": "^14.1.0",
+    "rollup": "^2.70.0",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.31.1",
-    "typescript": "^4.5.2",
-    "vue": "~3"
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.6.2",
+    "vue": "~3.2.31"
   },
   "files": [
     "/dist"
