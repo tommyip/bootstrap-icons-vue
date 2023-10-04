@@ -33,11 +33,11 @@
   "devDependencies": {
     "bootstrap-icons": "^1.11.1",
     "http-server": "^14.1.0",
-    "rollup": "^2.70.0",
+    "rollup": "^3.29.4",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.31.2",
-    "typescript": "^4.6.2",
-    "vue": "~3.2.31"
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.2.2",
+    "vue": "~3.3.4"
   },
   "files": [
     "/dist"
