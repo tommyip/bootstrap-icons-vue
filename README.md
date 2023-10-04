@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/npm/v/bootstrap-icons-vue?color=blue" alt="NPM">
   </a>
   <a href="https://icons.getbootstrap.com/">
-    <img src="https://img.shields.io/badge/Bootstrap%20Icons-1.10.3-blueviolet" alt="Bootstrap Icons">
+    <img src="https://img.shields.io/badge/Bootstrap%20Icons-11.1.1-blueviolet" alt="Bootstrap Icons">
   </a>
   <a href="https://github.com/vuejs/vue-next">
     <img src="https://img.shields.io/badge/Vue.js-3.x-success" alt="Vue JS">
@@ -17,7 +17,7 @@
 
 This library provides Bootstrap icons as Vue 3.x components.
 
-Built from Bootstrap Icons v1.10.3.
+Built from Bootstrap Icons v11.1.1.
 
 ## Installation
 
@@ -33,7 +33,7 @@ Alternatively, you can use them straight from a CDN without installation.
 
 ```html
 <script src="https://unpkg.com/vue@3.2.23"></script>
-<script src="https://unpkg.com/bootstrap-icons-vue@1.10.3"></script>
+<script src="https://unpkg.com/bootstrap-icons-vue@11.1.1"></script>
 ```
 
 ## Usage
