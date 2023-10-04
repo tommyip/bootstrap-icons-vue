@@ -1,44 +1,44 @@
-import typescript from 'rollup-plugin-typescript2';
-import { terser } from 'rollup-plugin-terser';
+import terser from "@rollup/plugin-terser";
+import typescript from "@rollup/plugin-typescript";
 
 export default [
   {
-    external: ['vue'],
-    input: 'src/index.ts',
+    external: ["vue"],
+    input: "src/index.ts",
     output: [
       {
-        format: 'esm',
-        file: 'dist/lib.esm.js',
+        format: "esm",
+        file: "dist/lib.esm.js",
       },
       {
-        format: 'cjs',
-        file: 'dist/lib.common.js',
+        format: "cjs",
+        file: "dist/lib.common.js",
       },
     ],
-    plugins: [typescript()],
+    plugins: [typescript({ outDir: "dist" })],
   },
   {
-    external: ['vue'],
-    input: 'src/browser.ts',
+    external: ["vue"],
+    input: "src/browser.ts",
     output: [
       {
-        format: 'iife',
-        file: 'dist/bundle.js',
-        name: 'BootstrapIconsVue',
+        format: "iife",
+        file: "dist/bundle.js",
+        name: "BootstrapIconsVue",
         globals: {
-          vue: 'Vue',
+          vue: "Vue",
         },
       },
       {
-        format: 'iife',
-        file: 'dist/bundle.min.js',
-        name: 'BootstrapIconsVue',
+        format: "iife",
+        file: "dist/bundle.min.js",
+        name: "BootstrapIconsVue",
         globals: {
-          vue: 'Vue',
+          vue: "Vue",
         },
         plugins: [terser()],
       },
     ],
-    plugins: [typescript()],
+    plugins: [typescript({ outDir: "dist" })],
   },
 ];

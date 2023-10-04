@@ -1,9 +1,10 @@
 {
   "name": "bootstrap-icons-vue",
-  "version": "1.10.3",
+  "version": "11.1.1",
   "description": "Bootstrap icons as Vue components.",
   "author": "Thomas Ip <thomas@ipthomas.com>",
   "license": "MIT",
+  "type": "module",
   "main": "dist/lib.common.js",
   "module": "dist/lib.esm.js",
   "web": "dist/bundle.min.js",
@@ -26,21 +27,23 @@
     "url": "https://github.com/tommyip/bootstrap-icons-vue/issues"
   },
   "scripts": {
-    "build": "node ./src/codegen.js && rollup -c",
+    "build": "node ./src/codegen.cjs && rollup -c",
     "dev:vite": "cd ./dev-vite && yarn dev",
     "dev:cdn": "http-server -o dev-cdn"
   },
   "devDependencies": {
-    "bootstrap-icons": "1.10.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.4",
+    "bootstrap-icons": "^1.11.1",
     "http-server": "^14.1.0",
-    "rollup": "^2.70.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.31.2",
-    "typescript": "^4.6.2",
-    "vue": "~3.2.31"
+    "rollup": "^3.29.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4"
   },
   "files": [
     "/dist"
   ],
-  "sideEffects": false
+  "sideEffects": false,
+  "dependencies": {}
 }
