@@ -31,7 +31,7 @@
     "dev:cdn": "http-server -o dev-cdn"
   },
   "devDependencies": {
-    "bootstrap-icons": "1.10.3",
+    "bootstrap-icons": "^1.11.1",
     "http-server": "^14.1.0",
     "rollup": "^2.70.0",
     "rollup-plugin-terser": "^7.0.2",
