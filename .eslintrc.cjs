@@ -15,5 +15,6 @@ module.exports = {
   parserOptions: {
     parser: "@typescript-eslint/parser",
   },
+  ignorePatterns: ["node_modules/", "dist/", ".yarn/"],
   root: true,
 };
