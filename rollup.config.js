@@ -12,7 +12,7 @@ export default [
       },
       {
         format: "cjs",
-        file: "dist/lib.common.js",
+        file: "dist/lib.common.cjs",
       },
     ],
     plugins: [typescript({ outDir: "dist" })],

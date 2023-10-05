@@ -43,20 +43,28 @@ Alternatively, you can use them straight from a CDN without installation.
 Making them globally available for an app:
 
 ```js
-import { createApp } from 'vue';
-import { BIconBatteryFull, BIconArrow90degDown, BIconBookmark } from 'bootstrap-icons-vue';
+import { createApp } from "vue";
+import {
+  BIconBatteryFull,
+  BIconArrow90degDown,
+  BIconBookmark,
+} from "bootstrap-icons-vue";
 
 const app = createApp(/** App **/);
-app.component('BIconBatteryFull', BIconBatteryFull);
-app.component('BIconArrow90degDown', BIconArrow90degDown);
-app.component('BIconBookmark', BIconBookmark);
-app.mount('#app');
+app.component("BIconBatteryFull", BIconBatteryFull);
+app.component("BIconArrow90degDown", BIconArrow90degDown);
+app.component("BIconBookmark", BIconBookmark);
+app.mount("#app");
 ```
 
 Or just for one component:
 
 ```js
-import { BIconBatteryFull, BIconArrow90degDown, BIconBookmark } from 'bootstrap-icons-vue';
+import {
+  BIconBatteryFull,
+  BIconArrow90degDown,
+  BIconBookmark,
+} from "bootstrap-icons-vue";
 
 export default {
   components: {
@@ -71,12 +79,12 @@ export default {
 **2. Importing all icons**
 
 ```js
-import { createApp } from 'vue';
-import { BootstrapIconsPlugin } from 'bootstrap-icons-vue';
+import { createApp } from "vue";
+import { BootstrapIconsPlugin } from "bootstrap-icons-vue";
 
 const app = createApp(/** App **/);
 app.use(BootstrapIconsPlugin);
-app.mount('#app');
+app.mount("#app");
 ```
 
 Note that this will register all icon components to the app instance, unused icons will not be tree-shakable.
@@ -88,7 +96,7 @@ Vue 3 does not have a global application instance, so it is not possible to auto
 ```js
 const app = Vue.createApp(/** App **/);
 app.use(BootstrapIconsVue);
-app.mount('#app');
+app.mount("#app");
 ```
 
 ### Naming convention

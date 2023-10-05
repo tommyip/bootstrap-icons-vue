@@ -8,5 +8,9 @@
 </template>
 
 <script setup>
-import { BIconAlarm, BIconFileSpreadsheet, BIconArrow90degDown } from 'bootstrap-icons-vue';
+import {
+  BIconAlarm,
+  BIconFileSpreadsheet,
+  BIconArrow90degDown,
+} from "bootstrap-icons-vue";
 </script>

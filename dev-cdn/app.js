@@ -9,11 +9,11 @@ const app = Vue.createApp({
   `,
   data() {
     return {
-      msg: 'Bootstrap Icons Vue',
+      msg: "Bootstrap Icons Vue",
     };
   },
 });
 
 app.use(BootstrapIconsVue);
 
-app.mount('#app');
+app.mount("#app");
