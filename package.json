@@ -4,7 +4,6 @@
   "description": "Bootstrap icons as Vue components.",
   "author": "Thomas Ip <thomas@ipthomas.com>",
   "license": "MIT",
-  "type": "module",
   "main": "dist/lib.common.cjs",
   "module": "dist/lib.esm.js",
   "web": "dist/bundle.min.js",
@@ -27,7 +26,7 @@
     "url": "https://github.com/tommyip/bootstrap-icons-vue/issues"
   },
   "scripts": {
-    "build": "node ./src/codegen.cjs && rollup -c",
+    "build": "node ./src/codegen.cjs && rollup --bundleConfigAsCjs -c",
     "dev:vite": "cd ./dev-vite && yarn dev",
     "dev:cdn": "http-server -o dev-cdn",
     "lint:js": "eslint --ext \".ts,.js,.cjs,.vue\" --ignore-path .gitignore .",
