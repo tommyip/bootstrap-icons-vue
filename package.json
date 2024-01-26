@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-icons-vue",
-  "version": "1.11.1",
+  "version": "1.11.3",
   "description": "Bootstrap icons as Vue components.",
   "author": "Thomas Ip <thomas@ipthomas.com>",
   "license": "MIT",
@@ -35,22 +35,22 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js --fix"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.3",
-    "@rollup/plugin-typescript": "^11.1.4",
-    "@typescript-eslint/eslint-plugin": "^6.7.4",
-    "@typescript-eslint/parser": "^6.7.4",
-    "bootstrap-icons": "^1.11.1",
-    "eslint": "^8.50.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-vue": "^9.17.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "bootstrap-icons": "^1.11.3",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-vue": "^9.20.1",
     "http-server": "^14.1.0",
-    "prettier": "^3.0.3",
-    "rollup": "^3.29.4",
+    "prettier": "^3.2.4",
+    "rollup": "^4.9.6",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "vue-eslint-parser": "^9.3.1",
-    "vue": "^3.3.4"
+    "typescript": "^5.3.3",
+    "vue": "^3.4.15",
+    "vue-eslint-parser": "^9.4.2"
   },
   "files": [
     "/dist"
