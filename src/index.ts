@@ -1,2 +1,2 @@
-export * from './icons';
-export { BootstrapIconsPlugin, iconNames } from './plugin';
+export * from "./icons";
+export { BootstrapIconsPlugin, iconNames } from "./plugin";

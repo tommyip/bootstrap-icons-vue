@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "declaration": true,
-  },
+    "declaration": true
+  }
 }

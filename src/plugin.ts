@@ -1,5 +1,5 @@
-import * as icons from './icons';
-import { Plugin } from 'vue';
+import * as icons from "./icons";
+import { Plugin } from "vue";
 
 export const BootstrapIconsPlugin: Plugin = {
   install: (app, _options) => {
